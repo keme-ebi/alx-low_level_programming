@@ -16,20 +16,24 @@ int main(void)
 		{
 			for (c = 0; c <= 9; c++)
 			{
-				for (d = 0; d <= 9; c++)
+				for (d = 0; d <= 9; d++)
 				{
-					if (((a + b) < (c + d) && a <= c) || c > a)
+					if (((a + b) < (c + d) && c >= a) || a < c)
 					{
 						putchar((a % 10) + '0');
 						putchar((b % 10) + '0');
 						putchar(' ');
 						putchar((c % 10) + '0');
 						putchar((d % 10) + '0');
-					if (a + b + c + d == 35 && a == 9)
+					}
+					if (a + b + c + d == 9899 && a == 9)
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
-					}
 					}
 				}
 			}
