@@ -3,7 +3,7 @@
 /**
  * main - prints all possible different combination of three digits
  *	separated by , and followed by a space
- * Return: always 0.
+ * Return: always success.
  */
 
 int main(void)
