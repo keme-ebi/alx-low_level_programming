@@ -3,7 +3,7 @@
 /**
  * main - prints all possible different combination of three digits
  *	separated by , and followed by a space
- * Return: always success.
+ * Return: always 0.
  */
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (num1 = 0; num1 <= 9; num1++)
 		{
-			for (num2 = 0; num2 <= 9; num++)
+			for (num2 = 0; num2 <= 9; num2++)
 			{
 				if (num < num1 && num1 < num2)
 				{
