@@ -25,7 +25,7 @@ int main(void)
 						putchar(' ');
 						putchar((c % 10) + '0');
 						putchar((d % 10) + '0');
-					if (((a = 9 && b = 8) && (c = 9 && d = 9)))
+					if (a + b + c + d = 35 && a = 9)
 					{
 						break;
 					}
