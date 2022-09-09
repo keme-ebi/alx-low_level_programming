@@ -10,13 +10,13 @@ int main(void)
 {
 	int a, b, c, d;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = 0; b <= 9; b++)
 		{
-			for (c = 48; c <= 57; c++)
+			for (c = 0; c <= 9; c++)
 			{
-				for (d = 48; d <= 57; c++)
+				for (d = 0; d <= 9; c++)
 				{
 					if (((a + b) < (c + d) && a <= c) || c > a)
 					{
@@ -25,11 +25,7 @@ int main(void)
 						putchar(' ');
 						putchar((c % 10) + '0');
 						putchar((d % 10) + '0');
-					if (a + b + c + d == 227 && a == 57)
-					{
-						break;
-					}
-					else
+					if (a + b + c + d == 35 && a == 9)
 					{
 						putchar(',');
 						putchar(' ');
