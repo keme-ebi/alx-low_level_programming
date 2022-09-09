@@ -26,7 +26,7 @@ int main(void)
 						putchar((c % 10) + '0');
 						putchar((d % 10) + '0');
 					}
-					if (a + b + c + d == 9899 && a == 9)
+					if (a + b + c + d == 99 && a == 9)
 					{
 						break;
 					}
