@@ -25,11 +25,15 @@ int main(void)
 						putchar(' ');
 						putchar((c % 10) + '0');
 						putchar((d % 10) + '0');
+					if (((a = 9 && b = 8) && (c = 9 && d = 9)))
+					{
+						break;
 					}
-					if ((a != 9 && b != 8) && (c != 9 && d != 9))
+					else
 					{
 						putchar(',');
 						putchar(' ');
+					}
 					}
 				}
 			}
