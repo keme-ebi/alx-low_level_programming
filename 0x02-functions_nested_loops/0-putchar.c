@@ -7,9 +7,13 @@
 
 int main(void)
 {
-	char printchar[] = "_putchar";
+	char printchar[9] = "_putchar";
+	int c = 0;
 
-	_putchar(printchar);
+	for (c = 0; c < 8; c++)
+	{
+		_putchar(printchar[c]);
+	}
 	_putchar('\n');
 	return (0);
 }
