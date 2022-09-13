@@ -2,15 +2,14 @@
 
 /**
  * add - prints the result of two numbers added
- * @a, @b: integers
+ * @a: integer
+ * @b: integer
  * Return: result
  */
 
 int add(int a, int b)
 {
 	int result = a + b;
-
-	_putchar(result);
 
 	return (result);
 }
