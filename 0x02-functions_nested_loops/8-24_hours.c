@@ -18,7 +18,7 @@ void jack_bauer(void)
 
 			for (c = 0; c <= 5; c++)
 			{
-				if (a == 2 && b < 4)
+				if (a == 2 && b < 4 && c == 5)
 					break;
 				for (d = 0; d <= 9; d++)
 				{
@@ -30,7 +30,7 @@ void jack_bauer(void)
 						_putchar((c % 10) + '0');
 						_putchar((d % 10) + '0');
 						_putchar('\n');
-					if (a == 2 && b < 4)
+					if (a == 2 && b < 4 && c == 5 && d == 9)
 					{
 						break;
 					}
