@@ -25,7 +25,7 @@ void jack_bauer(void)
 						_putchar((c % 10) + '0');
 						_putchar((d % 10) + '0');
 						_putchar('\n');
-					if (b == 3)
+					if (a == 2 && b < 4)
 					{
 						break;
 					}
