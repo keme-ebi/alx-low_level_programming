@@ -7,6 +7,9 @@
 
 int main(void)
 {
-	fwrite("_putchar\n");
+	char printchar[] = "_putchar";
+
+	putchar(printchar);
+	putchar('\n');
 	return (0);
 }
