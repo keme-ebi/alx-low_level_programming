@@ -18,7 +18,7 @@ int main(void)
 		fs = n1 + n2;
 		n1 = n2;
 		n2 = fs;
-		if((n1 % 2) == 0)
+		if ((n1 % 2) == 0)
 			f = f + n1;
 	}
 	printf("%ld\n", f);
