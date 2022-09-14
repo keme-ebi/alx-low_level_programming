@@ -13,8 +13,8 @@ int main(void)
 	for (num = 1; num < 1024; num++)
 	{
 		if (((num % 3) == 0) || ((num % 5) == 0))
-			b = b + a;
+			mult = mult + num;
 	}
-	printf("%d\n", b);
+	printf("%d\n", mult);
 	return(0);
 }
