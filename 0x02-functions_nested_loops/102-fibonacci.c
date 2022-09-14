@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int n1, n2, fs, c;
+	long int n1, n2, fs, c;
 
 	n1 = 1;
 	n2 = 2;
@@ -16,11 +16,11 @@ int main(void)
 	{
 		if (n1 != 20365011074)
 		{
-			printf("%d, ", n1);
+			printf("%ld, ", n1);
 		}
 		else
 		{
-			printf("%d\n", n1);
+			printf("%ld\n", n1);
 		}
 		fs = n1 + n2;
 		n1 = n2;
