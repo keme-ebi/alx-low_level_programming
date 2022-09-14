@@ -14,18 +14,17 @@ int main(void)
 
 	for (c = 1; c <= 50; c++)
 	{
-		if (c != 50)
+		if (n1 != 20365011074)
 		{
-			printf("%d, " fs);
+			printf("%d, " n1);
 		}
 		else
 		{
-			fs = n1 + n2;
-			n1 = n2;
-			n2 = fs;
-			printf("%d", fs);
+			printf("%d\n", n1);
 		}
+		fs = n1 + n2;
+		n1 = n2;
+		n2 = fs;
 	}
-	printf("\n");
 	return (0);
 }
