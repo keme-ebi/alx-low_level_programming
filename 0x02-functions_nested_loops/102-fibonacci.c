@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (n1 != 20365011074)
 		{
-			printf("%d, " n1);
+			printf("%d, ", n1);
 		}
 		else
 		{
