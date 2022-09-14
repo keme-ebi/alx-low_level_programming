@@ -16,5 +16,5 @@ int main(void)
 			mult = mult + num;
 	}
 	printf("%d\n", mult);
-	return(0);
+	return (0);
 }
