@@ -14,9 +14,9 @@ int main(void)
 
 	for (c = 1; c <= 50; c++)
 	{
-		if (c < 1)
+		if (n2 != 20365011074)
 		{
-			fs = c;
+			printf("%d, " n2);
 		}
 		else
 		{
