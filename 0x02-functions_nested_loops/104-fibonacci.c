@@ -12,7 +12,7 @@ int main(void)
 	n1 = 1;
 	n2 = 2;
 	printf("%ld", n1);
-	for (c = 1; c <= 91; c++)
+	for (c = 1; c < 91; c++)
 	{
 		printf(", %ld", n2);
 		n2 = n2 + n1;
@@ -22,7 +22,7 @@ int main(void)
 	n4 = n1 % 1000000000;
 	n5 = n2 / 1000000000;
 	n6 = n2 % 1000000000;
-	for (c = 92; c <= 98; c++)
+	for (c = 92; c < 99; c++)
 	{
 		printf(", %ld", n5 + (n6 / 1000000000));
 		printf("%ld", n6 % 1000000000);
