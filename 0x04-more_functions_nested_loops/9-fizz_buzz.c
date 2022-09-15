@@ -10,7 +10,7 @@ int main(void)
 {
 	int nums;
 
-	for (nums = 1; nums <= 100; nums++)
+	for (nums = 1; nums < 100; nums++)
 	{
 		if ((nums % 3 == 0) && (nums % 5 == 0))
 		{
@@ -29,6 +29,6 @@ int main(void)
 			printf("%d ", nums);
 		}
 	}
-	printf("\n");
+	printf("Buzz\n");
 	return (0);
 }
