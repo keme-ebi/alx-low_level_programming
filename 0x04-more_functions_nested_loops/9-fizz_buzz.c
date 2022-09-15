@@ -11,17 +11,17 @@ int main(void)
 {
 	int nums;
 
-	for (nums = 1; nums < 100; nums++)
+	for (nums = 1; nums <= 100; nums++)
 	{
 		if ((nums % 3 == 0) && (nums % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((nums % 5) == 0)
+		else if (nums % 5 == 0)
 		{
 			printf("Buzz ");
 		}
-		else if ((nums % 3) == 0)
+		else if (nums % 3 == 0)
 		{
 			printf("Fizz ");
 		}
