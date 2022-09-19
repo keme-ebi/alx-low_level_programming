@@ -16,9 +16,9 @@ void rev_string(char *s)
 	start = s;
 	end = s;
 
-	for (c = 0; c < *(s + len) - 1; c++)
+	for (c = 0; c < len - 1; c++)
 		end++;
-	for (c = 0; c < *(s + len) / 2; c++)
+	for (c = 0; c < len / 2; c++)
 	{
 		tmp = *end;
 		*end = *start;
