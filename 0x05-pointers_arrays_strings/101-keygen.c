@@ -9,19 +9,22 @@
 
 int main(void)
 {
-	int a = 0, b = 0;
-	time_t t;
+	int a, b = 0, c;
+	int pass[100];
 
-	srand((unsigned int) time(&t));
-
-	while (b < 2772)
+	srand(time(NULL));
+	for (a = 0; a < 100; a++)
 	{
-		a = rand() % 128;
-		if ((b + a) > 2772)
+		pass[a] = rand() % 78;
+		b += pass[a] + '0';
+		putchar(pass[a] + '0');
+		if ((2772 - b) - '0' < 78)
+		{
+			c = 2772 - b - '0';
+			b += c;
+			putchar(c + '0');
 			break;
-		b = b + a;
-		printf("%c", a);
+		}
 	}
-	printf("%c\n", (2772 - b));
 	return (0);
 }
