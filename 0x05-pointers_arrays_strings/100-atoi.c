@@ -8,9 +8,9 @@
 
 int _atoi(char *s)
 {
-	int a = 0, b = 0, c = 0, d = 1, e = 1, f;
+	int a, b = 0, c = 0, d = 1, e = 1, f;
 
-	while  (*(s + a) != '\0')
+	while  (a = 0; *(s + a) != '\0'; a++)
 	{
 		if (b > 0 && (*(s + a) < '0' || *(s + a) > '9'))
 			break;
@@ -22,11 +22,10 @@ int _atoi(char *s)
 				e *= 10;
 			b++;
 		}
-		a++;
 	}
-	for (f = b - a; f < a; f++)
+	for (f = a - b; f < a; f++)
 	{
-		c += ((*(s + a) + '0') * e);
+		c += ((*(s + f) - 48) * e);
 		e /= 10;
 	}
 	return (c);
