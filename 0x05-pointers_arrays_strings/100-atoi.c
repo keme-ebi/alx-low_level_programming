@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	unsigned int a = 0, b = 0, c = 0, d = 1, e = 1, f;
 
-	for (a = 0; *(s + a) != '\0'; a++)
+	while  (*(s + a) != '\0')
 	{
 		if (b > 0 && (*(s + a) < '0' || *(s + a) > '9'))
 			break;
@@ -22,6 +22,7 @@ int _atoi(char *s)
 				e *= 10;
 			b++;
 		}
+		a++;
 	}
 	for (f = a - b; f < a; f++)
 	{
