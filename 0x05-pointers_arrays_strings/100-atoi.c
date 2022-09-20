@@ -16,7 +16,7 @@ int _atoi(char *s)
 			break;
 		if (*(s + a) == '-')
 			d *= -1;
-		if (*(s + a) >= '0' && *(s + a) <= '9')
+		if ((*(s + a) >= '0') && (*(s + a) <= '9'))
 		{
 			if (b > 0)
 				e *= 10;
@@ -25,7 +25,7 @@ int _atoi(char *s)
 	}
 	for (f = a - b; f < a; f++)
 	{
-		c += ((*(s + a) - 48) *e);
+		c += ((*(s + a) - 48) * e);
 		e /= 10;
 	}
 	return (c * d);
