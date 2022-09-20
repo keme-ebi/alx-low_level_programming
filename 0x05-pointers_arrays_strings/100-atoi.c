@@ -24,7 +24,7 @@ int _atoi(char *s)
 		}
 		a++;
 	}
-	for (f = b; f < a; f++)
+	for (f = b - a; f < a; f++)
 	{
 		c += ((*(s + a) + '0') * e);
 		e /= 10;
