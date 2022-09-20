@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	int a, b = 0, c = 0, d = 1, e = 1, f;
 
-	while  (a = 0; *(s + a) != '\0'; a++)
+	for (a = 0; *(s + a) != '\0'; a++)
 	{
 		if (b > 0 && (*(s + a) < '0' || *(s + a) > '9'))
 			break;
