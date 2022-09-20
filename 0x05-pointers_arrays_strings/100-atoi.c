@@ -8,7 +8,7 @@
 
 int _atoi(char *s)
 {
-	unsigned int a = 0, b = 0, c = 0, d = 1, e = 1, f;
+	int a = 0, b = 0, c = 0, d = 1, e = 1, f;
 
 	while  (*(s + a) != '\0')
 	{
@@ -24,10 +24,10 @@ int _atoi(char *s)
 		}
 		a++;
 	}
-	for (f = a - b; f < a; f++)
+	for (f = b; f < a; f++)
 	{
 		c += ((*(s + a) + '0') * e);
 		e /= 10;
 	}
-	return (c * d);
+	return (c);
 }
