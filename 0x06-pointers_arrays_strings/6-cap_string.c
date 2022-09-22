@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 	int len = 0, i;
-	int special_char = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	int special_char[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 
 	if (*(str + len) >= 97 && *(str + len) <= 122)
 		*(str + len) = *(str + len) - 32;
