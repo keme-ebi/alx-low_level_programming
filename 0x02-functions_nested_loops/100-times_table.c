@@ -13,16 +13,13 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			for (b = 0; b <= n; b++)
+			_putchar(48);
+			for (b = 1; b <= n; b++)
 			{
 				c = a * b;
 				_putchar(44);
 				_putchar(32);
-				if (b == 0)
-				{
-					_putchar('0');
-				}
-				else if (c < 10)
+				if (c < 10)
 				{
 					_putchar(32);
 					_putchar(32);
