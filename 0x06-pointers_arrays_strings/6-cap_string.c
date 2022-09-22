@@ -20,8 +20,8 @@ char *cap_string(char *str)
 		{
 			if (str[len] == special_char[i])
 			{
-				if (str[len] + 1 >= 97 && str[len] + 1 <= 122)
-					str[len] + 1 = (str[len] + 1) - 32;
+				if ((str[len] + 1) >= 97 && (str[len] + 1) <= 122)
+					(str[len] + 1) = (str[len] + 1) - 32;
 				break;
 			}
 		}
