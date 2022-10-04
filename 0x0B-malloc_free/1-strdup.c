@@ -18,6 +18,8 @@ char *_strdup(char *str)
 		return (NULL);
 	while (str[i] != '\0')
 		j++;
+	if (c == NULL)
+		return (NULL);
 	for (; j <= i; j++)
 		c[j] = str[j];
 	return (c);
