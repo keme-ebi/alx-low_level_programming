@@ -2,6 +2,21 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - returns the length of a string
+ * @s: char
+ * Return: string length
+ */
+
+int _strlen(char *s)
+{
+	int len;
+
+	for (len = 0; s[len] != '\0'; len++)
+		continue;
+	return (len);
+}
+
+/**
  * str_concat - concatenates two strings
  * @s1: string
  * @s2: string
@@ -11,26 +26,24 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
-	int i = 0, j = 0, len, a;
+	int s1_len, s2_len, comb_len, a;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
-	len = s1[i] + s2[j] + 1;
+	s1_len = _strlen(s1);
+	s2_len = _strlen(s2);
+	comb_len = s1_len + s2_len + 1;
 
-	str = malloc(sizeof(char) * len);
+	str = malloc(sizeof(char) * comb_len);
 	if (str == NULL)
 		return (NULL);
 
-	for (a = 0; a < s1[i]; a++)
-		str[a] = s1[i + a];
-	for (a = 0; a < s2[j]; a++)
-		*(str + (s1[i + a])) = s2[j + a];
-	str[len - 1] = '\0';
+	for (a = 0; a < s1_len; a++)
+		str[a] = s1[a];
+	for (a = 0; a < s2_len; a++)
+		str[s1_len + a] = s2[a];
+	str[comb_len - 1] = '\0';
 	return (str);
 }
