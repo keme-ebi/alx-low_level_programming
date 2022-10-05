@@ -19,6 +19,9 @@ char *argstostr(int ac, char **av)
 	if (arr == NULL)
 		return (NULL);
 	for (n = 0; n < ac; n++)
-		_putchar(arr[n]'\n');
+	{
+		_putchar(arr[n]);
+		_putchar('\n');
+	}
 	return (arr);
 }
