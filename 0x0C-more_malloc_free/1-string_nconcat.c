@@ -36,15 +36,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s1_len = slen(s1);
 	s2_len = slen(s2);
 	comb_len = s1_len + s2_len + 1;
-
+	if (n > s2_len)
+		n = s2_len;
 
 	str = malloc(sizeof(char) * comb_len);
 	if (str == NULL)
 		return (NULL);
 	for (a = 0; a < s1_len; a++)
 		str[a] = s1[a];
-	if (n >= s2_len)
-		str[s1_len + a] = s2_len;
 	for (a = 0; a < n && s2[a] != '\0'; a++)
 		str[s1_len + a] = s2[a];
 	str[comb_len - 1] = '\0';
