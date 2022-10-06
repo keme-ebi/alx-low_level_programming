@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	s1-len = slen(s1);
+	s1_len = slen(s1);
 	s2_len = slen(s2);
 	comb_len = s1_len + s2_len + 1;
 
