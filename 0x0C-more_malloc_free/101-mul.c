@@ -10,7 +10,7 @@
 
 int digit(char *s)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 		return (0);
