@@ -33,6 +33,14 @@ int slen(char *s)
 }
 
 /**
+ * error - error
+ */
+
+void error(void)
+{
+	printf("Error\n");
+	exit(98);
+/**
  * main - multiplies two numbers
  * @argc: number of command line argument
  * @argv: program command line argument
@@ -46,10 +54,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !digit(s1) || !digit(s2))
-	{
-		printf("Error\n");
-		exit(98);
-	}
+		error();
 	len1 = slen(s1);
 	len2 = slen(s2);
 	len = len1 + len2 + 1;
