@@ -12,7 +12,7 @@ int digit(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] < '0' || s[i] > '9')
+	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 		return (0);
 	return (1);
 }
@@ -33,14 +33,6 @@ int slen(char *s)
 }
 
 /**
- * error - error
- */
-
-void error(void)
-{
-	printf("Error\n");
-	exit(98);
-/**
  * main - multiplies two numbers
  * @argc: number of command line argument
  * @argv: program command line argument
@@ -54,7 +46,10 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !digit(s1) || !digit(s2))
-		error();
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	len1 = slen(s1);
 	len2 = slen(s2);
 	len = len1 + len2 + 1;
@@ -88,5 +83,4 @@ int main(int argc, char *argv[])
 	_putchar('\n');
 	free(result);
 	return (0);
-}
 }
