@@ -10,7 +10,7 @@
 
 int digit(char *s)
 {
-	unsigned int i;
+	int i;
 
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 		return (0);
@@ -48,7 +48,7 @@ void error(void)
 
 int main(int argc, char *argv[])
 {
-	int len, len1, len2, i, carry, digit1, digit2, *result, a = 0;
+	unsigned int len, len1, len2, i, carry, digit1, digit2, *result, a = 0;
 	char *s1, *s2;
 
 	s1 = argv[1], s2 = argv[2];
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 	len1 = slen(s1);
 	len2 = slen(s2);
 	len = len1 + len2 + 1;
-	result = malloc(sizeof(int) * len);
+	result = malloc(sizeof(unsigned int) * len);
 	if (!result)
 		return (1);
 	for (i = 0; i <= len1 + len2; i++)
