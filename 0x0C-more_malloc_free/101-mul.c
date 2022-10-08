@@ -41,7 +41,7 @@ int slen(char *s)
 
 int main(int argc, char *argv[])
 {
-	int len1, len2, i, carry, digit1, digit2, *result, a = 0;
+	int len, len1, len2, i, carry, digit1, digit2, *result, a = 0;
 	char *s1, *s2;
 
 	s1 = argv[1], s2 = argv[2];
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 	}
 	len1 = slen(s1);
 	len2 = slen(s2);
-	int len = len1 + len2 + 1;
+	len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * len);
 	if (!result)
 		return (1);
