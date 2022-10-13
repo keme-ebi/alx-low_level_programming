@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	rs = func(a1, a2);
+	rs = op(a1, a2);
 
 	printf("%d\n", rs);
 	return (0);
