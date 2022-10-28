@@ -30,7 +30,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (k = strlen - 1; k >= 0; k--)
 	{
-		if ((b[k] != '1' && b[k] != '0') || b == NULL)
+		if (b[k] != '1' && b[k] != '0')
 			return (0);
 		if (b[k] == '1')
 			j += i;
