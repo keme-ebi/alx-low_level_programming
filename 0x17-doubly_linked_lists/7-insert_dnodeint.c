@@ -2,7 +2,7 @@
 
 /**
  * insert_dnodeint_at_index - add a new node at the
- * 				nth position of a dlistint_t list
+ *	nth position of a dlistint_t list
  * @h: pointer to head node
  * @idx: index to store data
  * @n: data to be stored
@@ -21,6 +21,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	new = malloc(sizeof(dlistint_t));
+
+	if (new == NULL)
+		return (NULL);
 	if (idx != 0)
 	{
 		while (nth < idx - 1 && temp != NULL)
