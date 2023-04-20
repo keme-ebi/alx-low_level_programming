@@ -18,7 +18,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new = add_dnodeint(h, n);
 
 	if (temp == NULL && idx != 0)
-		new = add_dnodeint(h, n);
+		return (NULL);
 
 	new = malloc(sizeof(dlistint_t));
 
@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		if (temp->next == NULL)
 		{
-			
+			new = add_dnodeint(h, n);
 		}
 		while (nth < idx - 1 && temp != NULL)
 		{
